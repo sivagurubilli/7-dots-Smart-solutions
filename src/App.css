@@ -1,0 +1,49 @@
+.App{
+ text-align: center;
+ align-items: center;
+ 
+ margin-top: 6%;
+ width: 30%;
+ margin-left: 40%;
+}
+.container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.plus{
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.skip{
+  background-color: white;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media (max-width: 768px) {
+  .App {
+    width: 80%; /* Adjust the width for smaller screens */
+    margin-left: 10%; /* Adjust the margin for smaller screens */
+  }
+
+  .container {
+    flex-direction: column; /* Stack items vertically for smaller screens */
+  }
+
+  .plus,
+  .skip {
+    width: 100%; /* Make buttons take full width on smaller screens */
+    margin-top: 10px; /* Add spacing between buttons on smaller screens */
+  }
+}
